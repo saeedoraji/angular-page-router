@@ -1,0 +1,1 @@
+window.mtt = 'saeed oraji';

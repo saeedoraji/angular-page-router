@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en" data-ng-app="RMI">
+    <head>
+        <title>RMI</title>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="RMI" name="description"/>
+        <meta content="RMI" name="author"/>
+        <link rel="shortcut icon" href="views/resource/icon/favicon.ico"/>
+        <!--all css-->
+        <link href="views/resource/css/app.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body ng-controller="AppController">
+
+        <div data-ng-include="'views/tpl/header.html'"></div>
+
+                    <ui-view></ui-view>
+
+        <div data-ng-include="'views/tpl/footer.html'"></div>
+
+
+
+        <!--all bower-->
+        <script src="../../../bower_components/angular/angular.js" type="text/javascript"></script>
+        <script src="../../../bower_components/angular-ui-router/release/angular-ui-router.js" type="text/javascript"></script>
+
+        <script src="views/resource/js/app.js" type="text/javascript"></script>
+
+        <!--directives-->
+        <script src="../../../components/test/directive/test-directive.js" type="text/javascript"></script>
+
+
+
+        <!--module js-->
+        <script src='views/pages/home/home.js' type="text/javascript"></script>
+        <script src='views/pages/about/about.js' type="text/javascript"></script>
+        <script src='views/pages/404/404.js' type="text/javascript"></script>
+
+    </body>
+</html>
